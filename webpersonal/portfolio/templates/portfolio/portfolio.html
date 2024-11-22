@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/portfolio-4.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading">Discografía y Proyectos</span>
+{% endblock %}
+
+{% block content %}
+    {% for project in projects %}
+        <!-- Proyecto -->
+<h3>Discografía y Proyectos</h3>
+
+ <p>   Álbumes y EPs:
+    "Rogue" (2019): Un EP que captura emociones crudas con un estilo experimental.
+    "Amor de la Disco" (2021): Un proyecto que mezcla nostalgia con beats electrónicos.
+    Singles destacados:
+    "Noche".
+    "Me Haces Mal".
+    "TQETE".</p>
+    
+   <h3> Colaboraciones:</h3>
+   <p> Ha trabajado con otros artistas independientes, explorando nuevos sonidos y expandiendo su alcance creativo.</p>
+    {% endfor %}
+{% endblock %}

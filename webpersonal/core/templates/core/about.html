@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-1.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Sobre el</h2>   
+        <p>NSQK es un proyecto musical de Sergio Quezada, originario de Monterrey, México. Desde sus inicios, ha destacado por su estilo único que mezcla lo-fi, pop alternativo y electrónica. Inspirado por artistas como Tyler, The Creator y Clairo, Sergio busca transmitir vulnerabilidad y autenticidad en cada una de sus canciones.</p>
+        <p>Con letras que exploran temas como el amor, la soledad y el crecimiento personal, NSQK ha logrado conectar con una audiencia que busca algo más que música: busca emociones. Su capacidad para experimentar con sonidos y crear atmósferas lo ha llevado a presentarse en diversos escenarios, consolidándose como una de las promesas del indie en México.</p>
+</div>
+{% endblock %}
